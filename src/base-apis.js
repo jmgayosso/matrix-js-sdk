@@ -294,6 +294,10 @@ MatrixBaseApis.prototype.loginFlows = function(callback) {
     return this._http.request(callback, "GET", "/login");
 };
 
+MatrixBaseApis.prototype.dummy = function(callback) {
+    return this._http.request(callback, "POST", "/dummy");
+};
+
 /**
  * @param {string} loginType
  * @param {Object} data
